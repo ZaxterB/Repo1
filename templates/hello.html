@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block head %}
+<link rel="stylesheet" href="style.css" />
+<title> ZaxterB</title>
+{% endblock %}
+{% block content %}
+<div>
+  <canvas id="desktop"></canvas>
+</div>
+<script>
+  var canvas = document.getElementById('desktop');
+  var context = canvas.getContext('2d');
+  make_base();
+  function make_base()
+  {
+    base_image = new Image();
+    base_image.src = 'static/yeppp.jpg';
+    base_image.onload = function(){
+      context.drawImage(base_image, 0, 0, 200, 200);
+    }
+  }
+  make_base();
+</script>
+{% endblock %}

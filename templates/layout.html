@@ -1,0 +1,13 @@
+<!doctype html>
+<head>
+    {% block head %}
+    <link rel="stylesheet" href="style.css" />
+    <title> ZaxterB</title>
+    {% endblock %}
+</head>
+<nav>
+    <a href="{{ url_for('hello') }}"><button>?</button></a>
+</nav>
+<section class="content">
+    {% block content %}{% endblock %}
+</section>
