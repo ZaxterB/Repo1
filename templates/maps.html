@@ -1,6 +1,6 @@
 {% extends 'layout.html' %}
 {% block head %}
-<title> ZaxterB - Help</title>
+<title> ZaxterB</title>
 {% endblock %}
 {% block content %}
 <canvas id="desktop"></canvas>
@@ -14,9 +14,9 @@
   function make_base()
   {
     base_image = new Image();
-    base_image.src = 'static/yeppp.jpg';
+    base_image.src = 'static/room.png';
     base_image.onload = function(){
-      context.drawImage(base_image, 0, 0, window.innerWidth, window.innerHeight);
+        context.drawImage(base_image, 0, 0, window.innerWidth, window.innerHeight);
     }
   }
   make_base();
